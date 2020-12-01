@@ -1,0 +1,690 @@
+@import 'reset';
+@import 'owl-carousel';
+@import 'layout';
+@import 'color';
+@import 'fonts';
+@import 'screen';
+@import 'animation-plugin';
+@import 'owl-custom';
+
+body{
+    background-color: rgb(220, 220, 220);
+}
+main{
+    margin:0 20%;
+}
+//主選單
+header{
+    @include flex-row;
+    padding: 15px 0;
+    align-items: center;
+    a{
+        @include m-r(auto);
+    }
+    ul{
+        @include m-l(auto);
+        @include flex-row;
+        li{
+            a{
+                color: $black;
+            }
+        }
+        li:first-child{
+            @include m-r(1rem);
+        }
+        li:nth-child(2){
+            @include m-x(0.25rem, 0.25rem);
+        }
+        li:last-child{
+            @include m-l(1rem);
+        }
+    }
+}
+//主視覺
+.main-img{
+    img{
+        max-width: 100%;
+    }
+    a{
+        @include m-y(1rem, 1rem);
+        padding: 1rem 0;
+        border-radius: 300px;
+        width: 100%;
+        color: $white;
+        background-color: $light-blue;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+    }
+    a:hover{
+        background-color: $light-blue*0.75;
+    }
+}
+//書展頁籤
+.books-tab{
+    @include m-y(5%, 5%);
+    border-bottom: 1px solid $gray;
+    ul{
+        @include m-x(auto, auto);
+        @include flex-row;
+        width: 60%;
+        li{
+            @include m-x(auto, auto);
+            @include p-y(1rem, 1rem);
+            width: 60%;
+            a{
+                @include p-x(1rem ,1rem);
+                color: $black;
+                display: block;
+                text-align: center;
+            }
+        }
+    }    
+}
+//全書區
+.books-content{
+    @include flex-row;
+    width: 100%;
+    flex-wrap: wrap;
+    .books-content-area{
+        @include m-x(1.25%, 1.25%);
+        @include m-y(2.5%, 2.5%);
+        width: 17.5%;
+        text-align: center;
+        img{
+            @include m-b(0.5rem);
+            max-width: 100%;
+        }
+        p{
+            @include m-t(0.5rem);
+            color: $black;
+            line-height: 1.5rem;
+        }
+    }
+}
+.books-content2, .books-content3, .books-content4{
+    display: none;
+}
+
+//活動一
+$size: 100px;
+.event1{
+    @include m-y(10%, 10%);
+    .event-content{
+        @include flex-row;
+        align-items: flex-start;
+        > p{
+            @include m-x(15%, auto)
+            height: $size;
+            width: $size;
+            border-radius: $size;
+            line-height: $size;
+            font-size: 2rem;
+            white-space: nowrap;
+            background-color: $light-green;
+            text-align: center;
+            color: $white;
+        }
+        article{
+            @include m-x(auto, 15%);
+            .event-content-title-xl{
+                @include m-y(1rem, 1rem);
+                font-size: 3rem;
+                color: $light-blue;
+                white-space: nowrap;
+                .line-tag{
+                    @include m-r(5px);
+                    @include p-x(20px ,20px);
+                    background-color: $light-green;
+                    color: $white;
+                    white-space: nowrap;
+                    border-radius: 100px;
+                    font-size: 2.5rem;
+                }
+            }
+            .event-content-inside-l{
+                @include m-y(1rem, 1rem);
+                font-size: 2rem;
+                color: $deep-gray;
+            }
+            .event-content-title-l{
+                @include m-y(2rem, 2rem);
+                font-size: 2.5rem;
+                color: $deep-gray;
+            }
+            .event-content-inside-m{
+                @include m-y(1rem, 1rem);
+                font-size: 1.5rem;
+                color: $deep-gray;
+            }
+            .event-content-others{
+                @include m-y(1rem, 1rem);
+                font-size: 1.25rem;
+                color: $light-green;
+            }
+        }
+    }
+    .event-information{
+        @include m-y(5%, 5%);
+        @include p-b(10%);
+        @include flex-row;
+        border-bottom: 2px solid $light-green;
+        .event-information-step{
+            @include m-x(2.5%, 2.5%);
+            width: 100%;
+            span{
+                @include m-b(5%);
+                @include p-x(20px, 20px);
+                @include p-y(10px, 10px);
+                font-size: 1.25rem;
+                color: $white;
+                background-color: $light-blue;
+                border-radius: 100px;
+                display: inline-block;
+            }
+            img{
+                max-width: 100%;
+            }
+            article{
+                @include m-t(5%);
+                font-size: 1rem;
+                line-height: 1.5rem;
+                a{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+//活動二
+.event2{
+    @include m-y(10%, 10%);
+    .event-content{
+        @include flex-row;
+        align-items: flex-start;
+        > p{
+            @include m-x(15%, auto)
+            height: $size;
+            width: $size;
+            border-radius: $size;
+            line-height: $size;
+            font-size: 2rem;
+            white-space: nowrap;
+            background-color: $light-green;
+            text-align: center;
+            color: $white;
+        }
+        article{
+            @include m-x(auto, 15%);
+            .event-content-title-xl{
+                @include m-y(1rem, 1rem);
+                font-size: 3rem;
+                color: $light-blue;
+                .line-tag{
+                    @include m-r(5px);
+                    @include p-x(20px ,20px);
+                    background-color: $light-green;
+                    color: $white;
+                    white-space: nowrap;
+                    border-radius: 100px;
+                    font-size: 2.5rem;
+                }
+            }
+            .event-content-inside-l{
+                @include m-y(1rem, 1rem);
+                font-size: 2rem;
+                color: $deep-gray;
+            }
+            .event-content-title-l{
+                @include m-y(2rem, 2rem);
+                font-size: 2.5rem;
+                color: $deep-gray;
+            }
+            .event-content-inside-m{
+                @include m-y(1rem, 1rem);
+                font-size: 1.5rem;
+                color: $deep-gray;
+            }
+            .event-content-others{
+                @include m-y(1rem, 1rem);
+                font-size: 1.25rem;
+                color: $light-green;
+            }
+        }
+    }
+    .event-information{
+        @include m-y(5%, 5%);
+        @include flex-row;
+        .event-information-step{
+            @include m-x(2.5%, 2.5%);
+            width: 100%;
+            span{
+                @include m-b(5%);
+                @include p-x(20px, 20px);
+                @include p-y(10px, 10px);
+                font-size: 1.25rem;
+                color: $white;
+                background-color: $light-blue;
+                border-radius: 100px;
+                display: inline-block;
+            }
+            img{
+                max-width: 100%;
+            }
+            article{
+                @include m-t(5%);
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+//活動說明
+.other{
+    background-color: $light-blue;
+    .other-content{
+        @include p-x(20%, 20%);
+        @include p-y(20px, 20px);
+        background-color: $light-blue;
+        p{
+            @include m-b(2rem);
+            font-size: 2rem;
+        }
+        ul{
+            @include m-l(25px);
+            list-style-type: disc;
+            li{
+                @include m-y(0.5rem, 0.5rem);
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+//頁尾
+footer{
+    @include m-x(20%, 20%);
+    @include p-y(15px, 15px);
+    div{
+        @include m-y(10px, 10px);
+    }
+    div:first-child{
+        @include flex-row;
+        p:first-child{
+            @include m-x(0, auto);
+        }
+        p:nth-child(2), p:nth-child(3){
+            @include m-x(auto, auto);
+        }
+        p:last-child{
+            @include m-x(auto, 0);
+        }
+    }
+    div:last-child{
+        p{
+            text-align: center;
+        }
+    }
+}
+
+@include desktop-m {
+    main{
+        margin: 0 10%;
+    }
+    .event1{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            align-items: flex-start;
+            > p{
+                @include m-x(10%, auto)
+            }
+            article{
+                @include m-x(auto, 10%);
+            }
+        }
+    }
+    .event2{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            align-items: flex-start;
+            > p{
+                @include m-x(10%, auto)
+            }
+            article{
+                @include m-x(auto, 10%);
+            }
+        }
+    }
+    .other{
+        .other-content{
+            @include p-x(10%, 10%);
+        }
+    }
+    footer{
+        @include m-x(10%, 10%);
+    }
+}
+@include desktop-s{
+    .event1{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            > p{
+                @include m-x(0, auto)
+                height: auto;
+                width: auto;
+                border-radius: none;
+                font-size: 3rem;
+                white-space: nowrap;
+                background: none;
+                text-align: left;
+                color: $black;
+            }
+            article{
+                @include m-x(auto, auto);
+                width: 100%;
+                .event-content-title-xl{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 2rem;
+                    color: $light-blue;
+                    white-space: nowrap;
+                    .line-tag{
+                        @include m-r(5px);
+                        @include p-x(20px ,20px);
+                        background-color: $light-green;
+                        color: $white;
+                        white-space: nowrap;
+                        border-radius: 100px;
+                        font-size: 1.75rem;
+                    }
+                }
+                .event-content-inside-l{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+                .event-content-title-l{
+                    @include m-y(1rem, 1rem);
+                    font-size: 1.75rem;
+                }
+                .event-content-inside-m{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+                .event-content-others{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .event2{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            > p{
+                @include m-x(0, auto)
+                height: auto;
+                width: auto;
+                border-radius: none;
+                font-size: 3rem;
+                white-space: nowrap;
+                background: none;
+                text-align: left;
+                color: $black;
+            }
+            article{
+                @include m-x(auto, auto);
+                width: 100%;
+                .event-content-title-xl{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 2rem;
+                    color: $light-blue;
+                    white-space: nowrap;
+                    .line-tag{
+                        @include m-r(5px);
+                        @include p-x(20px ,20px);
+                        background-color: $light-green;
+                        color: $white;
+                        white-space: nowrap;
+                        border-radius: 100px;
+                        font-size: 1.75rem;
+                    }
+                }
+                .event-content-inside-l{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+                .event-content-title-l{
+                    @include m-y(1rem, 1rem);
+                    font-size: 1.75rem;
+                }
+                .event-content-inside-m{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+                .event-content-others{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+@include ipad{
+    .books-tab{
+        ul{
+            width: 100%;
+        }
+    }
+    .books-content{
+        .books-content-area{
+            width: 47.5%;
+        }
+    }
+    .event1{
+        .event-information{
+            flex-wrap: wrap;
+            .event-information-step{
+                @include m-x(auto, auto);
+                @include m-y(5%, 5%);
+                width: 47.5%;
+            }
+        }
+    }
+    .event2{
+        .event-information{
+            flex-wrap: wrap;
+            .event-information-step{
+                @include m-x(auto, auto);
+                @include m-y(5%, 5%);
+                width: 47.5%;
+            }
+            .event-information-step:last-child{
+                @include m-x(0, auto);
+            }
+        }
+    }
+    footer{
+        div:first-child{
+            flex-wrap: wrap;
+            p{
+                @include m-y(0.5rem, 0.5rem);
+                width: 100%;
+            }
+        }
+        div:last-child{
+            p{
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
+//手機
+@include mobile-l{
+    main{
+        @include m-x(5%, 5%);
+    }
+    header{
+        flex-wrap: wrap;
+        a{
+            width: 100%;
+            text-align: center;
+        }
+        ul{
+            @include m-y(1rem, 1rem);
+            width: 100%;
+            li:first-child{
+                @include m-x(auto, auto);
+            }
+            li:nth-child(2){
+                @include m-x(0.25rem, 0.25rem);
+            }
+            li:last-child{
+                @include m-x(auto, auto);
+            }
+        }
+    }
+    .main-img{
+        a{
+            font-size: 1.5rem;
+        }
+    }
+    .books-tab{
+        ul{
+            flex-wrap: wrap;
+        }
+    }
+    .event1{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            > p{
+                font-size: 2rem;
+            }
+            article{
+                @include m-x(auto, auto);
+                width: 100%;
+                .event-content-title-xl{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.5rem;
+                    color: $light-blue;
+                    white-space: nowrap;
+                    .line-tag{
+                        font-size: 1.25rem;
+                    }
+                }
+                .event-content-inside-l{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+                .event-content-title-l{
+                    @include m-y(1rem, 1rem);
+                    font-size: 1.5rem;
+                }
+                .event-content-inside-m{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+                .event-content-others{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+            }
+        }
+        .event-information{
+            flex-wrap: wrap;
+            .event-information-step{
+                @include m-y(15%, 15%);
+                width: 100%;
+                span{
+                    @include m-x(auto, auto);
+                    width: 100px;
+                    display: block;
+                    text-align: center;
+                }
+                img{
+                    @include m-x(auto, auto);
+                    max-width: 80%;
+                    display: block;
+                }
+                article{
+                }
+            }
+        }
+    }
+    .event2{
+        @include m-y(10%, 10%);
+        .event-content{
+            @include flex-row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            > p{
+                font-size: 2rem;
+            }
+            article{
+                @include m-x(auto, auto);
+                width: 100%;
+                .event-content-title-xl{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1.5rem;
+                    color: $light-blue;
+                    white-space: nowrap;
+                    .line-tag{
+                        font-size: 1.25rem;
+                    }
+                }
+                .event-content-inside-l{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+                .event-content-title-l{
+                    @include m-y(1rem, 1rem);
+                    font-size: 1.5rem;
+                }
+                .event-content-inside-m{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+                .event-content-others{
+                    @include m-y(0.75rem, 0.75rem);
+                    font-size: 1rem;
+                }
+            }
+        }
+        .event-information{
+            flex-wrap: wrap;
+            .event-information-step{
+                @include m-y(15%, 15%);
+                width: 100%;
+                span{
+                    @include m-x(auto, auto);
+                    width: 100px;
+                    display: block;
+                    text-align: center;
+                }
+                img{
+                    @include m-x(auto, auto);
+                    max-width: 80%;
+                    display: block;
+                }
+                article{
+                }
+            }
+        }
+    }
+    .other{
+        .other-content{
+            @include p-x(5%, 5%);
+        }
+    }
+    footer{
+        @include m-x(5%, 5%);
+    }
+}
