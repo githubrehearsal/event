@@ -5,6 +5,9 @@ $(document).ready(function () {
         $('.books-content2').css('display','none');
         $('.books-content3').css('display','none');
         $('.books-content4').css('display','none');
+        $('.books-tab-btn').removeClass('tab-default');
+        $('.books-tab-btn').removeClass('tab-active');
+        $(this).addClass('tab-active');
         return false;
     });
     $('.books-tab-btn2').click(function (e) { 
@@ -12,6 +15,9 @@ $(document).ready(function () {
         $('.books-content1').css('display','none');
         $('.books-content3').css('display','none');
         $('.books-content4').css('display','none');
+        $('.books-tab-btn').removeClass('tab-default');
+        $('.books-tab-btn').removeClass('tab-active');
+        $(this).addClass('tab-active');
         return false;
     });
     $('.books-tab-btn3').click(function (e) { 
@@ -19,6 +25,9 @@ $(document).ready(function () {
         $('.books-content1').css('display','none');
         $('.books-content2').css('display','none');
         $('.books-content4').css('display','none');
+        $('.books-tab-btn').removeClass('tab-default');
+        $('.books-tab-btn').removeClass('tab-active');
+        $(this).addClass('tab-active');
         return false;
     });
     $('.books-tab-btn4').click(function (e) { 
@@ -26,6 +35,9 @@ $(document).ready(function () {
         $('.books-content1').css('display','none');
         $('.books-content2').css('display','none');
         $('.books-content3').css('display','none');
+        $('.books-tab-btn').removeClass('tab-default');
+        $('.books-tab-btn').removeClass('tab-active');
+        $(this).addClass('tab-active');
         return false;
     });
 });

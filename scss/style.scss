@@ -13,6 +13,13 @@ body{
 main{
     margin:0 20%;
 }
+//js 效果
+.tab-active{
+    color: $black !important;
+}
+.tab-default{
+    color: $gray !important;
+}
 //主選單
 header{
     @include flex-row;
@@ -74,7 +81,7 @@ header{
             width: 60%;
             a{
                 @include p-x(1rem ,1rem);
-                color: $black;
+                color: $gray;
                 display: block;
                 text-align: center;
             }
@@ -90,7 +97,7 @@ header{
         @include m-x(1.25%, 1.25%);
         @include m-y(2.5%, 2.5%);
         width: 17.5%;
-        text-align: center;
+        text-align: left;
         img{
             @include m-b(0.5rem);
             max-width: 100%;

@@ -3528,6 +3528,14 @@ main {
   margin: 0 20%;
 }
 
+.tab-active {
+  color: #191919 !important;
+}
+
+.tab-default {
+  color: #969696 !important;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3625,7 +3633,7 @@ header ul li:last-child {
 .books-tab ul li a {
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #191919;
+  color: #969696;
   display: block;
   text-align: center;
 }
@@ -3649,7 +3657,7 @@ header ul li:last-child {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   width: 17.5%;
-  text-align: center;
+  text-align: left;
 }
 
 .books-content .books-content-area img {
