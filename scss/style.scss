@@ -153,6 +153,9 @@ $size: 100px;
                 @include m-y(1rem, 1rem);
                 font-size: 2rem;
                 color: $deep-gray;
+                span{
+                    color: $black;
+                }
             }
             .event-content-title-l{
                 @include m-y(2rem, 2rem);
@@ -163,6 +166,11 @@ $size: 100px;
                 @include m-y(1rem, 1rem);
                 font-size: 1.5rem;
                 color: $deep-gray;
+                img{
+                    position: relative;
+                    top: 10px;
+                    max-width: 40px;
+                }
             }
             .event-content-others{
                 @include m-y(1rem, 1rem);
@@ -194,10 +202,17 @@ $size: 100px;
             }
             article{
                 @include m-t(5%);
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                position: relative;
                 a{
                     color: $black;
+                }
+                img{
+                    width: 50px;
+                    display: inline-block;
+                    position: absolute;
+                    top: -10px;
                 }
             }
         }
@@ -210,7 +225,7 @@ $size: 100px;
         @include flex-row;
         align-items: flex-start;
         > p{
-            @include m-x(15%, auto)
+            @include m-x(15%, auto);
             height: $size;
             width: $size;
             border-radius: $size;
@@ -251,6 +266,9 @@ $size: 100px;
                 @include m-y(1rem, 1rem);
                 font-size: 1.5rem;
                 color: $deep-gray;
+                span{
+                    color: $black;
+                }
             }
             .event-content-others{
                 @include m-y(1rem, 1rem);
@@ -280,7 +298,8 @@ $size: 100px;
             }
             article{
                 @include m-t(5%);
-                line-height: 1.5rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
             }
         }
     }
@@ -305,6 +324,9 @@ $size: 100px;
                 a{
                     color: $black;
                     text-decoration: underline;
+                }
+                a:hover{
+                    color: $white;
                 }
             }
         }
@@ -585,6 +607,7 @@ footer{
                 .event-content-title-xl{
                     @include m-y(0.75rem, 0.75rem);
                     font-size: 1.5rem;
+                    line-height: 2.25rem;
                     color: $light-blue;
                     white-space: nowrap;
                     .line-tag{
@@ -593,19 +616,23 @@ footer{
                 }
                 .event-content-inside-l{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
                 .event-content-title-l{
                     @include m-y(1rem, 1rem);
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
+                    line-height: 2.175rem;
                 }
                 .event-content-inside-m{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
                 .event-content-others{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
             }
         }
@@ -624,8 +651,6 @@ footer{
                     @include m-x(auto, auto);
                     max-width: 80%;
                     display: block;
-                }
-                article{
                 }
             }
         }
@@ -653,19 +678,23 @@ footer{
                 }
                 .event-content-inside-l{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
                 .event-content-title-l{
                     @include m-y(1rem, 1rem);
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
+                    line-height: 2.175rem;
                 }
                 .event-content-inside-m{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
                 .event-content-others{
                     @include m-y(0.75rem, 0.75rem);
-                    font-size: 1rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
                 }
             }
         }

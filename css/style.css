@@ -3738,6 +3738,10 @@ header ul li:last-child {
   color: #505050;
 }
 
+.event1 .event-content article .event-content-inside-l span {
+  color: #191919;
+}
+
 .event1 .event-content article .event-content-title-l {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -3750,6 +3754,12 @@ header ul li:last-child {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #505050;
+}
+
+.event1 .event-content article .event-content-inside-m img {
+  position: relative;
+  top: 10px;
+  max-width: 40px;
 }
 
 .event1 .event-content article .event-content-others {
@@ -3798,12 +3808,20 @@ header ul li:last-child {
 
 .event1 .event-information .event-information-step article {
   margin-top: 5%;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  position: relative;
 }
 
 .event1 .event-information .event-information-step article a {
   color: #191919;
+}
+
+.event1 .event-information .event-information-step article img {
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
 }
 
 .event2 {
@@ -3882,6 +3900,10 @@ header ul li:last-child {
   color: #505050;
 }
 
+.event2 .event-content article .event-content-inside-m span {
+  color: #191919;
+}
+
 .event2 .event-content article .event-content-others {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -3926,7 +3948,8 @@ header ul li:last-child {
 
 .event2 .event-information .event-information-step article {
   margin-top: 5%;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 .other {
@@ -3960,6 +3983,10 @@ header ul li:last-child {
 .other .other-content ul li a {
   color: #191919;
   text-decoration: underline;
+}
+
+.other .other-content ul li a:hover {
+  color: whitesmoke;
 }
 
 footer {
@@ -4327,6 +4354,7 @@ footer div:last-child p {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     font-size: 1.5rem;
+    line-height: 2.25rem;
     color: #6478c3;
     white-space: nowrap;
   }
@@ -4336,22 +4364,26 @@ footer div:last-child p {
   .event1 .event-content article .event-content-inside-l {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event1 .event-content article .event-content-title-l {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 2.175rem;
   }
   .event1 .event-content article .event-content-inside-m {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event1 .event-content article .event-content-others {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event1 .event-information {
     -ms-flex-wrap: wrap;
@@ -4414,22 +4446,26 @@ footer div:last-child p {
   .event2 .event-content article .event-content-inside-l {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event2 .event-content article .event-content-title-l {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 2.175rem;
   }
   .event2 .event-content article .event-content-inside-m {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event2 .event-content article .event-content-others {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .event2 .event-information {
     -ms-flex-wrap: wrap;
