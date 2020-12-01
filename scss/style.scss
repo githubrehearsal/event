@@ -295,6 +295,10 @@ $size: 100px;
             li{
                 @include m-y(0.5rem, 0.5rem);
                 line-height: 1.5rem;
+                a{
+                    color: $black;
+                    text-decoration: underline;
+                }
             }
         }
     }

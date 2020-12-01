@@ -3949,6 +3949,11 @@ header ul li:last-child {
   line-height: 1.5rem;
 }
 
+.other .other-content ul li a {
+  color: #191919;
+  text-decoration: underline;
+}
+
 footer {
   margin-left: 20%;
   margin-right: 20%;
