@@ -131,6 +131,15 @@ $size: 100px;
             background-color: $light-green;
             text-align: center;
             color: $white;
+            position: relative;
+            &:after{
+                @include absolute(-15px ,none, none, -15px, auto);
+                content: '';
+                height: 29px;
+                width: 23px;
+                background-image: url(../image/point.png);
+                background-repeat: no-repeat;
+            }
         }
         article{
             @include m-x(auto, 15%);
@@ -235,6 +244,15 @@ $size: 100px;
             background-color: $light-green;
             text-align: center;
             color: $white;
+            position: relative;
+            &:after{
+                @include absolute(-15px ,none, none, -15px, auto);
+                content: '';
+                height: 29px;
+                width: 23px;
+                background-image: url(../image/point.png);
+                background-repeat: no-repeat;
+            }
         }
         article{
             @include m-x(auto, 15%);
@@ -357,7 +375,26 @@ footer{
         }
     }
 }
-
+//置頂按鈕
+.top-btn{
+    @include fixed(none, 20%, 10%, none, auto);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: $white;
+    text-align: center;
+    box-shadow: 0 0 3px $light-gray;
+    i{
+        &:before{
+            @include absolute(0, 0, 0, 0, auto);
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+            color: $black;
+        }
+    }
+}
 @include desktop-m {
     main{
         margin: 0 10%;
@@ -396,6 +433,10 @@ footer{
     footer{
         @include m-x(10%, 10%);
     }
+    .top-btn{
+        right: 10%;
+        bottom: 10%;
+    }
 }
 @include desktop-s{
     .event1{
@@ -414,6 +455,9 @@ footer{
                 background: none;
                 text-align: left;
                 color: $black;
+                &:after{
+                    display: none;
+                }
             }
             article{
                 @include m-x(auto, auto);
@@ -468,6 +512,9 @@ footer{
                 background: none;
                 text-align: left;
                 color: $black;
+                &:after{
+                    display: none;
+                }
             }
             article{
                 @include m-x(auto, auto);
@@ -714,8 +761,6 @@ footer{
                     max-width: 80%;
                     display: block;
                 }
-                article{
-                }
             }
         }
     }
@@ -726,5 +771,9 @@ footer{
     }
     footer{
         @include m-x(5%, 5%);
+    }
+    .top-btn{
+        bottom: 5%;
+        right:5%;
     }
 }

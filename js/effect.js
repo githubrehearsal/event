@@ -40,4 +40,8 @@ $(document).ready(function () {
         $(this).addClass('tab-active');
         return false;
     });
+    //置頂功能
+    $('.top-btn').click(function (e) { 
+		$('html,body').animate({ scrollTop: 0, }, 1000);
+    });
 });

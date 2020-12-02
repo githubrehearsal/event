@@ -3705,6 +3705,21 @@ header ul li:last-child {
   background-color: #00c33c;
   text-align: center;
   color: whitesmoke;
+  position: relative;
+}
+
+.event1 .event-content > p:after {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: none;
+  bottom: none;
+  margin: auto;
+  content: '';
+  height: 29px;
+  width: 23px;
+  background-image: url(../image/point.png);
+  background-repeat: no-repeat;
 }
 
 .event1 .event-content article {
@@ -3854,6 +3869,21 @@ header ul li:last-child {
   background-color: #00c33c;
   text-align: center;
   color: whitesmoke;
+  position: relative;
+}
+
+.event2 .event-content > p:after {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: none;
+  bottom: none;
+  margin: auto;
+  content: '';
+  height: 29px;
+  width: 23px;
+  background-image: url(../image/point.png);
+  background-repeat: no-repeat;
 }
 
 .event2 .event-content article {
@@ -4030,6 +4060,36 @@ footer div:last-child p {
   text-align: center;
 }
 
+.top-btn {
+  position: fixed;
+  top: none;
+  left: none;
+  right: 20%;
+  bottom: 10%;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px #c8c8c8;
+          box-shadow: 0 0 3px #c8c8c8;
+}
+
+.top-btn i:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  color: #191919;
+}
+
 @media (max-width: 1440px) {
   main {
     margin: 0 10%;
@@ -4090,6 +4150,10 @@ footer div:last-child p {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .top-btn {
+    right: 10%;
+    bottom: 10%;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -4122,6 +4186,9 @@ footer div:last-child p {
     background: none;
     text-align: left;
     color: #191919;
+  }
+  .event1 .event-content > p:after {
+    display: none;
   }
   .event1 .event-content article {
     margin-left: auto;
@@ -4194,6 +4261,9 @@ footer div:last-child p {
     background: none;
     text-align: left;
     color: #191919;
+  }
+  .event2 .event-content > p:after {
+    display: none;
   }
   .event2 .event-content article {
     margin-left: auto;
@@ -4496,6 +4566,10 @@ footer div:last-child p {
   footer {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .top-btn {
+    bottom: 5%;
+    right: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
